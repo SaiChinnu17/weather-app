@@ -11,7 +11,7 @@ export class WeatherService {
 
   constructor( private http: HttpClient) { }
 
-getWeatherByCoords(lat: string | number | boolean,lon: string | number | boolean){
+getWeatherByCoords(lat: string,lon: string){
   let params =new HttpParams()
    .set('lat',lat)
    .set('lon',lon)
